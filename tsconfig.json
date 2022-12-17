@@ -1,0 +1,39 @@
+{
+    "compilerOptions": {
+        "lib": ["ES2022"],
+        "module": "ES2022",
+        "target": "ES2022",
+        "strict": true,
+        "esModuleInterop": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "moduleResolution": "node",
+        "allowUnusedLabels": false,
+        "allowUnreachableCode": false,
+        "exactOptionalPropertyTypes": true,
+        "noFallthroughCasesInSwitch": true,
+        "noImplicitOverride": true,
+        "noImplicitReturns": true,
+        "noPropertyAccessFromIndexSignature": true,
+        "noUncheckedIndexedAccess": true,
+        "noUnusedLocals": true,
+        "noUnusedParameters": true,
+        "importsNotUsedAsValues": "error",
+        "checkJs": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        // typeorm
+        "emitDecoratorMetadata": true,
+        "experimentalDecorators": true,
+        "strictPropertyInitialization": false,
+
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./src/*"],
+            "~/*": ["./*"]
+        },
+        "types": ["node"]
+    },
+    "include": ["src/**/*.ts", "src/**/*.d.ts"],
+    "exclude": ["node_modules"]
+}

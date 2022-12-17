@@ -1,0 +1,27 @@
+{
+    "type": "module",
+    "scripts": {
+        "dev": "tsx src/index.ts",
+        "check": "tsc --noEmit --skipLibCheck",
+        "lint": "eslint . --ext .js,.jsx,.cjs,.mjs,.ts,.tsx,.cts,.mts --fix --ignore-path .eslintignore"
+    },
+    "dependencies": {
+        "better-sqlite3": "^8.0.1",
+        "fs-extra": "^11.1.0",
+        "node-kcp-token": "github:memetrollsXD/node-kcp",
+        "protobufjs": "^7.1.2",
+        "reflect-metadata": "^0.1.13",
+        "typeorm": "^0.3.11"
+    },
+    "devDependencies": {
+        "@types/fs-extra": "^9.0.13",
+        "@types/node": "^18.11.15",
+        "@typescript-eslint/eslint-plugin": "^5.46.1",
+        "@typescript-eslint/parser": "^5.46.1",
+        "eslint": "^8.29.0",
+        "eslint-config-prettier": "^8.5.0",
+        "prettier": "^2.8.1",
+        "tsx": "^3.12.1",
+        "typescript": "^4.9.4"
+    }
+}
