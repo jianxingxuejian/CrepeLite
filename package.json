@@ -7,6 +7,7 @@
     },
     "dependencies": {
         "better-sqlite3": "^8.0.1",
+        "express": "^4.18.2",
         "fs-extra": "^11.1.0",
         "node-kcp-token": "github:memetrollsXD/node-kcp",
         "protobufjs": "^7.1.2",
@@ -14,6 +15,7 @@
         "typeorm": "^0.3.11"
     },
     "devDependencies": {
+        "@types/express": "^4.17.15",
         "@types/fs-extra": "^9.0.13",
         "@types/node": "^18.11.15",
         "@typescript-eslint/eslint-plugin": "^5.46.1",

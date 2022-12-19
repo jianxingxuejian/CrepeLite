@@ -1,6 +1,13 @@
 import fs from 'fs-extra'
 import path from 'path'
 
+export function read(path: string) {
+    if (!fs.existsSync(path)) {
+        return undefined
+    }
+    return fs.readFileSync(path, 'utf-8')
+}
+
 export function readJson<T = Json>(path: string) {
     if (!fs.existsSync(path)) {
         return undefined
