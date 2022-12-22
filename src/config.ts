@@ -1,25 +1,20 @@
 import { readJson, writeJson } from '@/utils'
 
 type Config = {
-    http: {
-        host: string
-        port: number
-    }
-    server: {
-        ip: string
-        port: number
-    }
+    http: { host: string; port: number }
+    server: { ip: string; port: number } & (
+        | { maintenance: boolean; maintenanceMsg: string }
+        | { maintenance?: never; maintenanceMsg?: never }
+    )
+    dispatch: { name: string; url: string }[]
+    autoAccount: boolean
 }
 
 const defaultConfig: Config = {
-    http: {
-        host: '0.0.0.0',
-        port: 443
-    },
-    server: {
-        ip: '127.0.0.1',
-        port: 22102
-    }
+    http: { host: '0.0.0.0', port: 443 },
+    server: { ip: '127.0.0.1', port: 22102 },
+    dispatch: [{ name: 'CrepeSR', url: 'http://localhost/query_gateway' }],
+    autoAccount: true
 }
 
 function readConfig() {

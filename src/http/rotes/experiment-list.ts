@@ -1,10 +1,8 @@
 import express from 'express'
 
-const router = express.Router()
-
 const data = { retcode: 0, success: true, message: '', data: [] }
 
-router.get('/data_abtest_api/config/experiment/list', (_req, res) => {
+const router = express.Router().get('/data_abtest_api/config/experiment/list', (_req, res) => {
     res.send(data)
 })
 

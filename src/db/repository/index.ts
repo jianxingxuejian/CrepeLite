@@ -1,3 +1,4 @@
+import accountRepository from './Account'
 import avatarRepository from './Avatar'
 
-export { avatarRepository }
+export { accountRepository, avatarRepository }
