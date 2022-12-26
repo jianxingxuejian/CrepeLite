@@ -1,3 +1,4 @@
 import config from './config'
 import banners from './game/gacha/banner'
-import {} from './http/http-server'
+import dirs from './http/routes'
+console.log(dirs)
