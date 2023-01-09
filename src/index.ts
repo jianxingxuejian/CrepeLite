@@ -1,3 +1,3 @@
-import config from './config'
-import banners from './game/gacha/banner'
-import dirs from './http/routes'
+import httpStart from './http/http-server'
+
+httpStart()
